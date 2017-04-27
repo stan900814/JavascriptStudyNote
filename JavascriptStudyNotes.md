@@ -235,8 +235,15 @@ slice()方法能够基于当前数组中的一或多个项创建一个新数组�
 typeof:检测变量值的**基本类型**，如果是对象或者**null**，返回“object”  
 instanceof:检测变量值的**引用类型**，根据原型链来识别  
 ###4.2###
-**执行环境（execution context）**:  
+**执行环境（execution context）**:   
+ 
 **作用域链（scope chain）**:
+
+----------
+**回调函数（callback）**：将一个函数作为另外一个函数的参数，并且在另外一个函数中调用了这个函数，这个函数就叫做回调函数。example：setTimeout/setInterval。  
+
+**JavaScript中的同步与异步**：  
+**异步编程的几种实现方法**：
 
 
 
