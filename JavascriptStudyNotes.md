@@ -216,7 +216,29 @@ slice()方法能够基于当前数组中的一或多个项创建一个新数组�
 >var person2=new Person();  
 >person.sayName();  //"a"  
 >alert(person1.sayName==person2.sayName);  //true  
-  
+##第4章##
+###4.1###
+变量包含的值：基本类型（undefined、null、boolean、number、string）、引用类型（对象）。  
+基本类型值的复制是值的直接复制，从一个变量向另外一个变量复制基本类型值之后，两变量上的这个值互不影响。  
+引用类型值的复制是对引用对象的复制，从一个变量向另外一个变量复制引用类型值之后，两变量同时引用同一个对象，所以两变量会互相影响。  
+关于参数的传递，理解下面的例子：  
+>funtion setName(obj){  
+>obj.name="Nicholas";  
+>obj =new Object();  
+>obj.name="Greg";  
+>}  
+>var person =new Object();
+>setName(person);  
+>alert(person.name);   //""Nicholas""   
+
+----------
+typeof:检测变量值的**基本类型**，如果是对象或者**null**，返回“object”  
+instanceof:检测变量值的**引用类型**，根据原型链来识别  
+###4.2###
+**执行环境（execution context）**:  
+**作用域链（scope chain）**:
+
+
 
 
 
